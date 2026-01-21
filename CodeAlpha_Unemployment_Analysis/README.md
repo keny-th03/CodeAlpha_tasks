@@ -1,4 +1,4 @@
-Unemployment Analysis in India 
+📉 Unemployment Analysis in India 📉
 
 This project analyzes unemployment trends in India, with a special focus on the impact of COVID-19. It uses Python for data cleaning, visualization, and exploratory analysis, and is built to be interactive with Streamlit.
 
@@ -65,3 +65,4 @@ streamlit run app.py
 This analysis shows how unemployment trends changed over time in India, especially during COVID-19. Python-based data analysis and visualization help policymakers understand labor market dynamics and plan effective interventions.
 
 💻 Streamlit App (Optional) – Build a web app to predict iris species in real time. 👨‍💻 Author – Keni Thapa | Data Science Enthusiast
+
