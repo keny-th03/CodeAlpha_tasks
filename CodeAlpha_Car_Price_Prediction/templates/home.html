@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🚗 Car Price Prediction 🚗</title>
+</head>
+
+<body bgcolor="#d4e6f1">
+    <center>
+        <h1>🚗 Car Price Prediction 🚗</h1><br>
+        <form method="POST" action="{{ url_for('predict') }}">
+            <b>
+                Present Price (Lakhs): 
+                <input type="number" step="0.1" name="present_price" placeholder="e.g. 5.5" required><br><br>
+                
+                Car Age (Years): 
+                <input type="number" name="car_age" placeholder="e.g. 5" required><br><br>
+                
+                Driven Kms: 
+                <input type="number" name="driven_kms" placeholder="e.g. 45000" required><br><br>
+
+                Mileage per Year: 
+                <input type="number" name="mileage_year" placeholder="e.g. 9000" required><br><br>
+
+                Fuel Type (0=Petrol,1=Diesel): 
+                <input type="number" name="fuel_type" placeholder="0 / 1" required><br><br>
+
+                Selling Type (0=Dealer,1=Individual): 
+                <input type="number" name="selling_type" placeholder="0 / 1" required><br><br>
+
+                Transmission (0=Manual,1=Automatic): 
+                <input type="number" name="transmission" placeholder="0 / 1" required><br><br>
+
+                Owner: 
+                <input type="number" name="owner" placeholder="0 / 1 / 2"required><br><br>
+
+                Horsepower: 
+                <input type="number" name="horsepower" placeholder="e.g. 120" required><br><br>
+
+                Mileage: 
+                <input type="number" name="mileage" placeholder="e.g. 18" required><br><br>
+            </b>
+            <button type="submit">Predict Price</button>
+        </form>
+    </center>
+
+</body>
+
+</html>

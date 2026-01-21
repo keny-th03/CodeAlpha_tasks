@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🚗 CAR PRICE PREDICTION RESULT 🚗</title>
+</head>
+
+<body bgcolor="#E6E6FA">
+    <center>
+        <h1>🚗 Car Price Prediction Result 🚗</h2>
+        <h3>💰 Estimated Selling Price:</h3>
+        <h2>:💵 {{ prediction }} Lakhs</h2>
+        
+        <br><br>
+
+        <img src="static\car.png" width="300">
+
+        <br><br>
+        <h3>📊 Model Evaluation Visualizations</h3>
+        <div style="display:flex; justify-content: center; flex-wrap:wrap;">
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='MAE.png') }}" width="300">
+            </div>
+
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='RMSE.png') }}" width="300">
+            </div>
+
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='R2.png') }}" width="300">
+            </div>
+            </div>
+
+        <h3>📊 Features Importance Visualizations</h3>
+        <div style="display:flex; justify-content: center; flex-wrap:wrap;">
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='impact.png') }}" width="300">
+            </div>
+        </div>
+
+        <h3>📊 Model Performance Visualizations</h3>
+        <div style="display:flex; justify-content: center; flex-wrap:wrap;">
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='Lr_model_perf.png') }}" width="300">
+            </div>
+
+            <div style="margin:10px;">
+                <img src="{{ url_for('static', filename='RF_model_perf.png') }}" width="300">
+            </div>
+        </div>
+
+        <br><br>
+        <a href="/">🔙 Predict Another Car</a>
+    </center>
+</body>
+
+</html>
